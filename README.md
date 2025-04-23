@@ -1,5 +1,6 @@
 # 株式会社NFTDrive 公式デコーダー
 
+
 このリポジトリには、**株式会社NFTDrive** が提供する Symbolブロックチェーン上のデータを読み解く  
 **PHP製デコーダー（download.php）** が含まれています。
 
@@ -7,6 +8,9 @@
 
 これらのプログラムを含むデコーダーを公開するには下記の利用規約を確認してください。
 [利用規約](https://nft-drive.localinfo.jp/posts/23874701)
+
+[株式会社NFTDrive](https://nftdrive.net)
+
 
 
 ---
