@@ -7,6 +7,7 @@
 これらのプログラムは **自由に利用・改編** することができます。
 
 これらのプログラムを含むデコーダーを公開するには下記の利用規約を確認してください。
+
 [利用規約](https://nft-drive.localinfo.jp/posts/23874701)
 
 [株式会社NFTDrive](https://nftdrive.net)
@@ -33,12 +34,12 @@
 
 ### 1. ノードの設定
 
-`download.php` を開いて、以下のように使用するノードのURLを `$node_list` に追加してください。
+`download.php` を開いて、以下のように使用するノードのドメインを `$node_list` に追加してください。
 
 ```php
 $node_list = [
-  "https://example-node1.com:3001",
-  "https://example-node2.net:3001"
+  "example-node1.com",
+  "example-node2.net"
 ];
 
 
