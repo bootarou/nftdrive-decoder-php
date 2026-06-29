@@ -364,6 +364,15 @@ function ag_tx($hash)
 
                 global $counter;
 
+                // 旧仕様ではアグリゲート外だった注記メッセージが内包TXに同梱される
+                // ようになり、位置決め打ち(counter==5/10/15…)がずれるため、メタ領域では
+                // この注記を除外してカウンタを進めず、旧来の並びへ再整列する
+                if ($counter < 15 && isset($tx["transaction"]["message"])) {
+                    if (trim(hex2bin($tx["transaction"]["message"])) === "Please note that this mosaic is an NFT.") {
+                        continue;
+                    }
+                }
+
                 if (isset($tx["transaction"])) {
                     global $counter;
                     //MOSAIC作成と分岐
