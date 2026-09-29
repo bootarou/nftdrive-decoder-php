@@ -1,5 +1,7 @@
 # 株式会社NFTDrive 公式デコーダー（PHP）
 
+**日本語** | [English](./README.en.md)
+
 Symbol ブロックチェーン上の NFTDrive レコードを取得・復元し、元のファイルとして返す
 PHP 製デコーダーです。
 
